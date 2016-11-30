@@ -117,13 +117,163 @@ dependencies {
 }
 ```
 更多详情：https://github.com/hotchemi/PermissionsDispatcher   
-<table>  
-    <tr>  
-        <td>北京</td>  
-    <td>雾霾</td>  
-    </tr>  
-    <tr>  
-        <td>深圳</td>  
-    <td>暴雨</td>  
-    </tr>  
-</table> 
+# 附录
+危险权限和权限组  
+<table>
+        <tbody>
+            <tr>
+                <th scope="col">权限组</th>
+                <th scope="col">权限</th>
+            </tr>
+
+            <tr>
+                <td>CALENDAR</td>
+                <td>
+                    <ul>
+                        <li>
+                            READ_CALENDAR
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            WRITE_CALENDAR
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td>CAMERA</td>
+                <td>
+                    <ul>
+                        <li>
+                            CAMERA
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td>CONTACTS</td>
+                <td>
+                    <ul>
+                        <li>
+                            READ_CONTACTS
+                        </li>
+                        <li>
+                            WRITE_CONTACTS
+                        </li>
+                        <li>
+                            GET_ACCOUNTS
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td>LOCATION</td>
+                <td>
+                    <ul>
+                        <li>
+                            ACCESS_FINE_LOCATION
+                        </li>
+                        <li>
+                            ACCESS_COARSE_LOCATION
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td>MICROPHONE</td>
+                <td>
+                    <ul>
+                        <li>
+                            RECORD_AUDIO
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td>PHONE</td>
+                <td>
+                    <ul>
+                        <li>
+                            READ_PHONE_STATE
+                        </li>
+                        <li>
+                            CALL_PHONE
+                        </li>
+                        <li>
+                            READ_CALL_LOG
+                        </li>
+                        <li>
+                            WRITE_CALL_LOG
+                        </li>
+                        <li>
+                            ADD_VOICEMAIL
+                        </li>
+                        <li>
+                            USE_SIP
+                        </li>
+                        <li>
+                            PROCESS_OUTGOING_CALLS
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td>SENSORS</td>
+                <td>
+                    <ul>
+                        <li>
+                            BODY_SENSORS
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td>SMS</td>
+                <td>
+                    <ul>
+                        <li>
+                            SEND_SMS
+                        </li>
+                        <li>
+                            RECEIVE_SMS
+                        </li>
+                        <li>
+                            READ_SMS
+                        </li>
+                        <li>
+                            RECEIVE_WAP_PUSH
+                        </li>
+                        <li>
+                            RECEIVE_MMS
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    STORAGE
+                </td>
+                <td>
+                    <ul>
+                        <li>
+                            READ_EXTERNAL_STORAGE
+                        </li>
+                        <li>
+                            WRITE_EXTERNAL_STORAGE
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>  
+更多详情：https://developer.android.com/guide/topics/security/permissions.html?hl=zh-cn#defining
