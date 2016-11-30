@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">动态权限demo</string>
+
+    <string name="permission_call_phone_rationale">我们是一个流氓软件，需要拨号权限</string>
+    <string name="permission_location_rationale">我们是一个流氓软件，需要定位权限</string>
+    <string name="permission_call_phone_denied">您拒绝了我们的权限申请，将会导致应用无法正常使用</string>
+    <string name="permission_location_denied">您拒绝了我们的权限申请，将会导致应用无法正常使用</string>
+    <string name="permission_call_phone_never_askagain">您可以在设置中开启应用权限，以确保应用正常使用</string>
+    <string name="button_allow">允许</string>
+    <string name="button_deny">拒绝</string>
+</resources>
