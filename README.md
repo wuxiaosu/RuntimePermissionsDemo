@@ -1,9 +1,10 @@
 # RuntimePermissionsDemo
 基于PermissionsDispatcher的动态权限demo，PermissionsDispatcher地址https://github.com/hotchemi/PermissionsDispatcher   
 （部分定制rom弹出请求权限提示框时体验有些许不同，例如华为emui）  
+# 效果图
 <img src="https://raw.githubusercontent.com/wuxiaosu/RuntimePermissionsDemo/master/screenshorts/00.gif" width = "300" height = "500"/>
 # 快速配置 
-## 1.引入jia包 
+## 1.引入jar包 
 
 ```
 apply plugin: 'android-apt'
