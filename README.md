@@ -1,6 +1,7 @@
 # RuntimePermissionsDemo
 基于PermissionsDispatcher的动态权限demo，PermissionsDispatcher地址https://github.com/hotchemi/PermissionsDispatcher   
-（部分定制rom体验有些许不同，例如华为emui）
+（部分定制rom弹出请求权限提示框时体验有些许不同，例如华为emui）  
+<img src="https://raw.githubusercontent.com/wuxiaosu/RuntimePermissionsDemo/master/screenshorts/00.gif" width = "300" height = "500"/>
 # 快速配置 
 ## 1.引入jia包 
 
@@ -93,7 +94,7 @@ public void onRequestPermissionsResult(int requestCode, @NonNull String[] permis
     MainActivityPermissionsDispatcher.onRequestPermissionsResult(this, requestCode, grantResults);
 }
 ```
-## 如果你用 AndroidAnnotations  
+## 如果你使用了 AndroidAnnotations  
 你需要：  
 在项目project的 **build.gradle** 中添加  
 
@@ -276,4 +277,5 @@ dependencies {
 
         </tbody>
     </table>  
+同一权限组内只需要授权一个，即同时授权了权限组内其他权限。
 更多详情：https://developer.android.com/guide/topics/security/permissions.html?hl=zh-cn#defining
