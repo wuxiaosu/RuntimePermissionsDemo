@@ -71,11 +71,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @NeedsPermission({Manifest.permission.ACCESS_COARSE_LOCATION,
             Manifest.permission.ACCESS_FINE_LOCATION,
             Manifest.permission.WRITE_EXTERNAL_STORAGE,
-            Manifest.permission.READ_EXTERNAL_STORAGE,
-            Manifest.permission.READ_PHONE_STATE})
+            Manifest.permission.READ_EXTERNAL_STORAGE})
     void showLocation() {
         Log.e(TAG, "========================== >> 定位");
         //定位
+        Toast.makeText(this, "TODO: 定位", Toast.LENGTH_LONG).show();
     }
 
     /**
@@ -86,8 +86,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @OnShowRationale({Manifest.permission.ACCESS_COARSE_LOCATION,
             Manifest.permission.ACCESS_FINE_LOCATION,
             Manifest.permission.WRITE_EXTERNAL_STORAGE,
-            Manifest.permission.READ_EXTERNAL_STORAGE,
-            Manifest.permission.READ_PHONE_STATE})
+            Manifest.permission.READ_EXTERNAL_STORAGE})
     void showRationaleForLocation(PermissionRequest request) {
         Log.e(TAG, "showRationaleForLocation: ===================== >> 展示申请理由");
         showRationaleDialog(R.string.permission_location_rationale, request);
@@ -132,13 +131,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @OnNeverAskAgain(Manifest.permission.CALL_PHONE)
     void onCallPhoneNeverAskAgain() {
         Log.e(TAG, "onCallPhoneNeverAskAgain: ===================== >> 被设置不再询问");
-        Toast.makeText(this, R.string.permission_call_phone_never_askagain, Toast.LENGTH_SHORT).show();
+//        Toast.makeText(this, R.string.permission_call_phone_never_askagain, Toast.LENGTH_SHORT).show();
         //给一个弱提示 或者弹出对话框让用户去设置界面
-       /* new AlertDialog.Builder(this)
+        new AlertDialog.Builder(this)
                 .setPositiveButton("去啊,去啊", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(@NonNull DialogInterface dialog, int which) {
-                        sendSettingsIntent(DemoActivity.this);
+                        sendSettingsIntent(MainActivity.this);
                     }
                 })
                 .setNegativeButton("不去,滚", new DialogInterface.OnClickListener() {
@@ -148,7 +147,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 })
                 .setCancelable(false)
                 .setMessage("是不是现在去设置权限?")
-                .show();*/
+                .show();
     }
 
     private void showRationaleDialog(@StringRes int messageResId, final PermissionRequest request) {
