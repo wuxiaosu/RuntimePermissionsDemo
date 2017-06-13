@@ -1,9 +1,8 @@
 apply plugin: 'com.android.application'
-apply plugin: 'android-apt'
 
 android {
     compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    buildToolsVersion "25.0.3"
 
     defaultConfig {
         applicationId "com.wuxiaosu.runtimepermissionsdemo"
@@ -21,10 +20,19 @@ android {
 }
 
 dependencies {
+    compile('com.github.hotchemi:permissionsdispatcher:2.4.0') {
+        exclude module: "support-v13"
+    }
+    annotationProcessor 'com.github.hotchemi:permissionsdispatcher-processor:2.4.0'
+    dependencies {
+        compile('com.github.hotchemi:permissionsdispatcher:${latest.version}') {
+            // if you don't use android.app.Fragment you can exclude support for them
+            exclude module: "support-v13"
+        }
+        annotationProcessor 'com.github.hotchemi:permissionsdispatcher-processor:${latest.version}'
+    }
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:25.1.0'
-    compile 'com.android.support:design:25.1.0'
-
-    compile 'com.github.hotchemi:permissionsdispatcher:2.2.0'
-    apt 'com.github.hotchemi:permissionsdispatcher-processor:2.2.0'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.android.support:support-annotations:25.3.1'
 }
