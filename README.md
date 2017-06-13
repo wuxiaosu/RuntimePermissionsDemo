@@ -139,5 +139,6 @@ SMS（短信）| SEND_SMS（发送短信）| 发送短信
 || RECEIVE_WAP_PUSH（接收Wap Push）| 接收WAP PUSH信息
 || RECEIVE_MMS（接收彩信）| 接收彩信
 STORAGE（存储） | READ_EXTERNAL_STORAGE（读取外部存储）| 允许应用程序从外部存储读取
-|| WRITE_EXTERNAL_STORAGE（写入外部存储）| 允许应用程序写入外部存储
+|| WRITE_EXTERNAL_STORAGE（写入外部存储）| 允许应用程序写入外部存储  
+
 更多详情：https://developer.android.com/guide/topics/security/permissions.html?hl=zh-cn#defining
